@@ -105,3 +105,21 @@ In RVIZ, a PoseArray element which is named WayPoints is added and shows all the
 
 ## Discussion
 ### Mapping
+<p align="center">
+  <img src="readmeResources/img5.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 5: Mapping process at a linear speed of 0.1m/s</em>
+</p>
+It can be seen from Figure 5 that at the beginning we didn't know how to control the speed of the robot well to build a map. We used a linear velocity of 0.1m/s to control the movement. Part of the reason is that due to network delays, the maps created are not accurate. So we must constantly move through the scene to build a somewhat accurate and complete map.
+
+<p align="center">
+  <img src="readmeResources/img6.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 5: PGM established and saved at a linear velocity of 0.05m/s</em>
+</p>
+
+Figure 6 is the map we created and saved by controlling the robot to move in the scene at a linear speed of 0.05m/s. After saving, there are two files, our_map.yaml and our_map.pgm.
+
+## Localization
