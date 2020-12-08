@@ -45,3 +45,5 @@ The target mode is Turtlebot Burger. Turtulebot3 which is available in two model
 <p align="center">
     <em>Fig. 3: Turtlebot Burger model</em>
 </p>
+## Navigation
+The main aim of the ROS navigation package is to move a robot from the start position to the goal position, without making any collision with the environment. The ROS Navigation package comes with an implementation of several navigation related algorithms which can easily help implement autonomous navigation in the mobile robots. Navigation Stack which is shown in Figure 4, takes in current location of the robot, the goal pose, the Odometry data of Robot (wheel encoders etc) and data from a sensor as an input, and outputs the necessary velocity commands and forward them to the mobile base in order to move the robot to the designated goal.
