@@ -2,8 +2,9 @@
 **Version 1.0.0**
 
 Authors:
-- Azadeh Hadadi (a.hadadi1363@gmail.com)
 - Jue Wang (834185446@qq.com)
+- Azadeh Hadadi (a.hadadi1363@gmail.com)
+
 
 **Table-of-contents**
 - [Project Description](#Project-Description)
