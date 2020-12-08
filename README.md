@@ -26,6 +26,13 @@ A clean map of the full cafeteria should be created and the robot should localiz
   <img src="readmeResources/img2.png" width="300" height="200">
 </p>
 <p align="center">
+    <em>Fig. 1: target map</em>
+</p>
+<p align="center">
   <img src="readmeResources/img3.png" width="300" height="200">
 </p>
+<p align="center">
+    <em>Fig. 2: objective waypoints</em>
+</p>
+
 
