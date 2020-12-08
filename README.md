@@ -6,7 +6,7 @@ Authors:
 - Jue Wang (834185446@qq.com)
 
 **Table-of-contents**
-- [Project Description](#Project Description)
+- [Project Description](#Project_Description)
 - [Hardware Component](#hardwareComponent)
 - [Navigation](#navigation)
 - [Procedure](#procedure)
