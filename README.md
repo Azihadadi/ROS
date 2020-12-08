@@ -63,3 +63,7 @@ The first step for navigation is creating a 2D map using the data from the laser
 Turtlebot is controlled by teleoperation to make it move through the environment in order to build the map using 360° LiDAR. To launch the teleoperation of Turtlebot3, we run the command in a new web shell:  
 
 `roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
+
+The generated maps are saved in the maps folder using map_server: 
+* our_map.pmg
+* our_map.yaml
