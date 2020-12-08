@@ -165,3 +165,33 @@ By launching the start_navigation.launch file, publishing the goal point, the ro
 Obstacles will be encountered during navigation. As shown in Figure 10, at the corners, the robot needs to avoid collisions, and it will automatically detect the distance.
 
 ## Follow waypoints
+
+<p align="center">
+  <img src="readmeResources/img11.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 11: From initial pose to first waypoint</em>
+</p>
+
+<p align="center">
+  <img src="readmeResources/img12.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 12: From initial pose to first waypoint</em>
+</p>
+
+<p align="center">
+  <img src="readmeResources/img13.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 13: From second waypoint to third waypoint</em>
+</p>
+
+<p align="center">
+  <img src="readmeResources/img14.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 14: From third waypoint to initial pose</em>
+</p>
+
+Figures 11 to 14 show the process of following the waypoints. Since we are using the follow_waypoints package, we start from the initial pose, and finally return to the initial pose following three waypoints.
