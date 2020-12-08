@@ -6,16 +6,16 @@ Authors:
 - Jue Wang (834185446@qq.com)
 
 **Table-of-contents**
-- [Project Description](#Project_Description)
-- [Hardware Component](#hardwareComponent)
+- [Project Description](#Project-Description)
+- [Hardware Component](#hardware-Component)
 - [Navigation](#navigation)
 - [Procedure](#procedure)
 - [Discussion](#discussion)
   - [Mapping](#mapping)
   - [Localization](#localization)
-  - [Path Planning ](#pathPlanning )
-  - [Avoid Obstacles](#avoidObstacles)
-  - [Follow Waypoints](#FollowWaypoints)
+  - [Path Planning ](#path-Planning )
+  - [Avoid Obstacles](#avoid-Obstacles)
+  - [Follow Waypoints](#Follow-Waypoints)
   
   ## Project Description
 
