@@ -58,3 +58,5 @@ The main aim of the ROS navigation package is to move a robot from the start pos
 The source package is **ros_project** including **launch**, **params** and **maps** subdirectories. ros_project package is used as the main package which includes the required  launch files to do the steps. 
 The first step for navigation is creating a 2D map using the data from the laser and the pose of the robot when it moves around the environment. **start_mapping.launch** is created in the **launch** folder to start **slam_gmapping** node. To visualize the navigation process, **RVIZ** tool is applied. So, In a new web shell, we run the below command which launches a predefined configuration of RVIZ for Mapping. 
 
+`rosrun rviz rviz -d rospack find turtlebot3_slam/rviz/turtlebot3_slam.rviz`
+Turtlebot is controlled by teleoperation to make it move through the environment in order to build the map using 360° LiDAR. To launch the teleoperation of Turtlebot3, we run the command in a new web shell:  
