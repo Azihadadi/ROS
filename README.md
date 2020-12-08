@@ -22,6 +22,10 @@ Authors:
 This project addressed the problem of ROS Navigation. Turtlebot3 Burger is considered as the objective robot model. A cafeteria map is defined as a target map which is shown in Figure1.
 A clean map of the full cafeteria should be created and the robot should localize itself in the environment. A goal position will be defined in the map which the robot should be taken through from its initial position to it. As is displayed in Figure1, there are some obstacles in the map. Meanwhile path planning, Turtulebot3 should avoid these obstacles. As the last step, three waypoints are considered in the map as displayed in Figure2 which Turtulebot should follow.
 
-<img src="readmeResources/img2.png" width="300" height="200">
-<img src="readmeResources/img3.png" width="300" height="200">
+<p align="center">
+  <img src="readmeResources/img2.png" width="300" height="200">
+</p>
+<p align="center">
+  <img src="readmeResources/img3.png" width="300" height="200">
+</p>
 
