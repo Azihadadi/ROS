@@ -117,9 +117,26 @@ It can be seen from Figure 5 that at the beginning we didn't know how to control
   <img src="readmeResources/img6.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 5: PGM established and saved at a linear velocity of 0.05m/s</em>
+    <em>Fig. 6: PGM established and saved at a linear velocity of 0.05m/s</em>
 </p>
 
 Figure 6 is the map we created and saved by controlling the robot to move in the scene at a linear speed of 0.05m/s. After saving, there are two files, our_map.yaml and our_map.pgm.
 
 ## Localization
+
+<p align="center">
+  <img src="readmeResources/img7.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 7: Initial pose estimation during localization process</em>
+</p>
+
+After launching the start_localization.launch file, we first need to give an initial pose, as Figure 7 shown, you can see the green particle cloud is the probability of pose. Then we let the robot move in the scene and use AMCL to automatically locate the robot.
+
+<p align="center">
+  <img src="readmeResources/img8.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 8: Pose estimation after localization process</em>
+</p>
+
