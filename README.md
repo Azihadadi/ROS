@@ -78,3 +78,27 @@ The generated maps are saved in the **maps** folder using **map_server**:
 To start localization the below command is applied:
 
 `roslaunch t3_navigation start_localization.launch`
+
+In the path planning step, **2D Pose Estimate** and **2D Nav Goal** tools in Rviz are used to set the initial position of the robot and send the goal to the robot, respectively. During the path planning, Turtulebot will avoid the obstacles in the path. It will be started by running this command:
+roslaunch t3_navigation start_navigation.launch
+To follow the waypoints, follow_waypoints package is useds. This package basically tracks the Estimate pose that is placed in RVIZ and stored. Then these positions should be published in a topic that starts sending them to the movebase system. So, follow_waypoints is gotten from the github and compiled:
+
+`cd ~/catkin_ws/src`
+
+`git clone https://github.com/danielsnider/follow_waypoints.git`
+
+`roscd`
+
+`cd ..`
+
+`catkin_make`
+
+`source devel/setup.bash`    (on every shell)
+
+ The next step is to start the waypoint server. This server will listen to publications into the topic **/initialpose** and store those poses until it is instructed to send them to **move_base** to be executed. 
+ 
+`roslaunch follow_waypoints follow_waypoints.launch`
+
+In RVIZ, a PoseArray element which is named WayPoints is added and shows all the waypoints are set since now. It subscribed to the topic **/waypoints**. The last step is publishing in the topic **/path_ready** to start sending waypoints to the movebase.
+
+`rostopic pub /path_ready std_msgs/Empty -1` 
