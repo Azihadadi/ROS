@@ -140,3 +140,28 @@ After launching the start_localization.launch file, we first need to give an ini
     <em>Fig. 8: Pose estimation after localization process</em>
 </p>
 
+It can be seen from Figure 8 that after automatic localization, the green particle cloud becomes concentrated. The more concentrated the particle cloud, the more accurate the robot's pose estimation and the more accurate the localization.
+
+## Path Planning
+
+<p align="center">
+  <img src="readmeResources/img9.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 9: Path Planning</em>
+</p>
+
+By launching the start_navigation.launch file, publishing the goal point, the robot automatically plans the path, and starts to go to the goal point. As we can see from Figure 9, the black line is the global planning path, and the red part is the local planning path.
+
+## Avoid Obstacles
+
+<p align="center">
+  <img src="readmeResources/img10.png" width="100" height="100">
+</p>
+<p align="center">
+    <em>Fig. 10: Avoid Obstacles</em>
+</p>
+
+Obstacles will be encountered during navigation. As shown in Figure 10, at the corners, the robot needs to avoid collisions, and it will automatically detect the distance.
+
+## Follow waypoints
