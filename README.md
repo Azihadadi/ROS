@@ -64,6 +64,17 @@ Turtlebot is controlled by teleoperation to make it move through the environment
 
 `roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
 
-The generated maps are saved in the maps folder using map_server: 
+The generated maps are saved in the **maps** folder using **map_server**: 
 * our_map.pmg
 * our_map.yaml
+
+**start_localization.launch** and **start_navigation.launch** are added in the **launch** folder to start the localization node and move the robot around to see its pose and start the **move_base** node to do path planning, respectively. We need to set all the parameters be called by move_base node in the **params** folder including:
+* **costmap_common_params_burger.yaml**
+* **local_costmap_params.yaml**
+* **global_costmap_params.yaml**
+* **move_base_params.yaml**
+* **dwa_local_planner_params.yaml**
+
+To start localization the below command is applied:
+
+`roslaunch t3_navigation start_localization.launch`
