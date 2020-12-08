@@ -102,3 +102,6 @@ To follow the waypoints, follow_waypoints package is useds. This package basical
 In RVIZ, a PoseArray element which is named WayPoints is added and shows all the waypoints are set since now. It subscribed to the topic **/waypoints**. The last step is publishing in the topic **/path_ready** to start sending waypoints to the movebase.
 
 `rostopic pub /path_ready std_msgs/Empty -1` 
+
+## Discussion
+### Mapping
