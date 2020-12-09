@@ -6,7 +6,7 @@ Authors:
 - Azadeh Hadadi (a.hadadi1363@gmail.com)
 
 
-**Table-of-contents**
+**Table of Contents**
 - [Project Description](#Project-Description)
 - [Hardware Component](#hardware-Component)
 - [Navigation](#navigation)
