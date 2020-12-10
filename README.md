@@ -18,6 +18,7 @@ Authors:
   - [Path Planning ](#path-Planning )
   - [Avoid Obstacles](#avoid-Obstacles)
   - [Follow Waypoints](#Follow-Waypoints)
+ - [Material Video](#material)
   
 ## Project Description
 
@@ -199,7 +200,7 @@ Obstacles will be encountered during navigation. As shown in Figure 10, at the c
 
 Figures 11 to 14 show the process of following the waypoints. Since we are using the follow_waypoints package, we start from the initial pose, and finally return to the initial pose following three waypoints.
 
-## Materials
+## Material
 
 #### Video in Construct web platform
 [![Watch the video](readmeRessources/vide.png)](https://youtu.be/BmDgy7q8rPo)
