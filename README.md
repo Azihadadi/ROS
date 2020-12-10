@@ -25,13 +25,13 @@ This project addressed the problem of ROS Navigation. Turtlebot3 Burger is consi
 A clean map of the full cafeteria should be created and the robot should localize itself in the environment. A goal position will be defined in the map which the robot should be taken through from its initial position to it. As is displayed in Figure1, there are some obstacles in the map. Meanwhile path planning, Turtulebot3 should avoid these obstacles. As the last step, three waypoints are considered in the map as displayed in Figure2 which Turtulebot should follow.
 
 <p align="center">
-  <img src="readmeResources/img2.png" width="300" height="150">
+  <img src="readmeResources/target_map.png" width="300" height="150">
 </p>
 <p align="center">
     <em>Fig. 1: target map</em>
 </p>
 <p align="center">
-  <img src="readmeResources/img3.png" width="300" height="150">
+  <img src="readmeResources/objective_waypoints.png" width="300" height="150">
 </p>
 <p align="center">
     <em>Fig. 2: objective waypoints</em>
@@ -42,7 +42,7 @@ Final results for the project are recorded on video and can be accessed on YouTu
 ## Hardware Component
 The target mode is Turtlebot Burger. Turtulebot3 which is available in two models, i.e. burger and waffle, is low-cost. It has a personal robot kit with open-source software and hardware. Moreover, this model which is the world’s most popular ROS platform, is modular, compact and customizable. 360° LiDAR of Burger, as the laser sensor is a 2D laser scanner that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping). Semiconductor Laser Diode (λ=785nm) is Its light source. The Distance range is 120 ~ 3,500mm. Additionally, its angular Range and angular Resolution are 360° and 1° respectively.
 <p align="center">
-  <img src="readmeResources/img1.png" width="150" height="125">
+  <img src="readmeResources/Turtlebot_Burger_model.png" width="150" height="125">
 </p>
 <p align="center">
     <em>Fig. 3: Turtlebot Burger model</em>
@@ -180,7 +180,7 @@ Obstacles will be encountered during navigation. As shown in Figure 10, at the c
   <img src="readmeResources/img12.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 12: From initial pose to first waypoint</em>
+    <em>Fig. 12: From first waypoint to second waypoint</em>
 </p>
 
 <p align="center">
