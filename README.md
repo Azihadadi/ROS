@@ -1,4 +1,4 @@
-# ROS Navigation Turtulebot3 Burger
+# ROS Navigation using Turtulebot3 Burger
 **Version 1.0.0**
 
 ROS Navigation stack is a powerful toolbox to path planning and Simultaneous Localization and Mapping (SLAM). This report is a technical document for ROS Navigation Using Turtlebot3 Burger. The **Construct Web Platform** is used as a simulator.
@@ -18,6 +18,7 @@ Authors:
   - [Path Planning ](#path-Planning )
   - [Avoid Obstacles](#avoid-Obstacles)
   - [Follow Waypoints](#Follow-Waypoints)
+ - [Material Video](#material)
   
 ## Project Description
 
@@ -59,13 +60,34 @@ The main aim of the ROS navigation package is to move a robot from the start pos
 
 ## Procedure
 The source package is **ros_project** including **launch**, **params** and **maps** subdirectories. ros_project package is used as the main package which includes the required  launch files to do the steps. 
-The first step for navigation is creating a 2D map using the data from the laser and the pose of the robot when it moves around the environment. **start_mapping.launch** is created in the **launch** folder to start **slam_gmapping** node. To visualize the navigation process, **RVIZ** tool is applied. So, In a new web shell, we run the below command which launches a predefined configuration of RVIZ for Mapping. 
+The first step for navigation is creating a 2D map using the data from the laser and the pose of the robot when it moves around the environment. **start_mapping.launch** is created in the **launch** folder to start **slam_gmapping** node. To visualize the navigation process, the **Rvis** tool is applied. So, In a new web shell, we run the below command. 
 
 `rosrun rviz rviz -d rospack find turtlebot3_slam/rviz/turtlebot3_slam.rviz`
 
 Turtlebot is controlled by teleoperation to make it move through the environment in order to build the map using 360° LiDAR. To launch the teleoperation of Turtlebot3, we run the command in a new web shell:  
 
-`roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
+`rosrun rviz rviz`
+
+Then we choose **our_config.rviz** for Mapping. Figure 5 shows all the displays we need to add.
+
+
+
+fig5
+
+We also tried using this command in the web shell to make the robot move around the environment:
+
+`rostopic pub /cmd_vel [TAB][TAB]`
+
+Figure 6 shows the information of velocity to be modified.
+
+<p align="center">
+  <img src="readmeResources/Mapping.png" width="500" height="200">
+</p>
+<p align="center">
+    <em>Fig. 6: Control the velocities of the robot using **/cmd_vel** topic</em>
+</p>
+
+Then we modify the linear velocity in x and angular velocity in z to make it move, but every time we want to change the velocity, we should ctrl+c to kill the last command and run the command again to modify the corresponding velocity.
 
 The generated maps are saved in the **maps** folder using **map_server**: 
 * our_map.pmg
@@ -80,10 +102,12 @@ The generated maps are saved in the **maps** folder using **map_server**:
 
 To start localization the below command is applied:
 
-`roslaunch t3_navigation start_localization.launch`
+`roslaunch ros_project start_localization.launch`
 
 In the path planning step, **2D Pose Estimate** and **2D Nav Goal** tools in Rviz are used to set the initial position of the robot and send the goal to the robot, respectively. During the path planning, Turtulebot will avoid the obstacles in the path. It will be started by running this command:
-roslaunch t3_navigation start_navigation.launch
+
+`roslaunch ros_project start_navigation.launch`
+
 To follow the waypoints, follow_waypoints package is useds. This package basically tracks the Estimate pose that is placed in RVIZ and stored. Then these positions should be published in a topic that starts sending them to the movebase system. So, follow_waypoints is gotten from the github and compiled:
 
 `cd ~/catkin_ws/src`
@@ -112,18 +136,18 @@ In RVIZ, a PoseArray element which is named WayPoints is added and shows all the
   <img src="readmeResources/Mapping.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 5: Mapping process at a linear speed of 0.1m/s</em>
+    <em>Fig. 7: Mapping process at a linear speed of 0.1m/s</em>
 </p>
-It can be seen from Figure 5 that at the beginning we didn't know how to control the speed of the robot well to build a map. We used a linear velocity of 0.1m/s to control the movement. Part of the reason is that due to network delays, the maps created are not accurate. So we must constantly move through the scene to build a somewhat accurate and complete map.
+It can be seen from Figure 7 that at the beginning we didn't know how to control the speed of the robot well to build a map. We used a linear velocity of 0.1m/s to control the movement. Part of the reason is that due to network delays, the maps created are not accurate. So we must constantly move through the scene to build a somewhat accurate and complete map.
 
 <p align="center">
   <img src="readmeResources/PGM.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 6: PGM established and saved at a linear velocity of 0.05m/s</em>
+    <em>Fig. 8: PGM established and saved at a linear velocity of 0.05m/s</em>
 </p>
 
-Figure 6 is the map we created and saved by controlling the robot to move in the scene at a linear speed of 0.05m/s. After saving, there are two files, our_map.yaml and our_map.pgm.
+Figure 8 is the map we created and saved by controlling the robot to move in the scene at a linear speed of 0.05m/s. After saving, there are two files, our_map.yaml and our_map.pgm.
 
 ## Localization
 
@@ -131,19 +155,19 @@ Figure 6 is the map we created and saved by controlling the robot to move in the
   <img src="readmeResources/Initial_pose_estimation.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 7: Initial pose estimation during localization process</em>
+    <em>Fig. 9: Initial pose estimation during localization process</em>
 </p>
 
-After launching the start_localization.launch file, we first need to give an initial pose, as Figure 7 shown, you can see the green particle cloud is the probability of pose. Then we let the robot move in the scene and use AMCL to automatically locate the robot.
+After launching the start_localization.launch file, we first need to give an initial pose, as Figure 9 shown, you can see the green particle cloud is the probability of pose. Then we let the robot move in the scene and use AMCL to automatically locate the robot.
 
 <p align="center">
   <img src="readmeResources/Pose_estimation.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 8: Pose estimation after localization process</em>
+    <em>Fig. 10: Pose estimation after localization process</em>
 </p>
 
-It can be seen from Figure 8 that after automatic localization, the green particle cloud becomes concentrated. The more concentrated the particle cloud, the more accurate the robot's pose estimation and the more accurate the localization.
+It can be seen from Figure 10 that after automatic localization, the green particle cloud becomes concentrated. The more concentrated the particle cloud, the more accurate the robot's pose estimation and the more accurate the localization.
 
 ## Path Planning
 
@@ -151,10 +175,10 @@ It can be seen from Figure 8 that after automatic localization, the green partic
   <img src="readmeResources/Path_Planning.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 9: Path Planning</em>
+    <em>Fig. 11: Path Planning</em>
 </p>
 
-By launching the start_navigation.launch file, publishing the goal point, the robot automatically plans the path, and starts to go to the goal point. As we can see from Figure 9, the black line is the global planning path, and the red part is the local planning path.
+By launching the start_navigation.launch file, publishing the goal point, the robot automatically plans the path, and starts to go to the goal point. As we can see from Figure 11, the black line is the global planning path, and the red part is the local planning path.
 
 ## Avoid Obstacles
 
@@ -162,10 +186,10 @@ By launching the start_navigation.launch file, publishing the goal point, the ro
   <img src="readmeResources/Avoid_Obstacles.png" width="100" height="100">
 </p>
 <p align="center">
-    <em>Fig. 10: Avoid Obstacles</em>
+    <em>Fig. 12: Avoid Obstacles</em>
 </p>
 
-Obstacles will be encountered during navigation. As shown in Figure 10, at the corners, the robot needs to avoid collisions, and it will automatically detect the distance.
+Obstacles will be encountered during navigation. As shown in Figure 12, at the corners, the robot needs to avoid collisions, and it will automatically detect the distance.
 
 ## Follow waypoints
 
@@ -173,33 +197,34 @@ Obstacles will be encountered during navigation. As shown in Figure 10, at the c
   <img src="readmeResources/first_waypoint.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 11: From initial pose to first waypoint</em>
+    <em>Fig. 13: From initial pose to first waypoint</em>
 </p>
 
 <p align="center">
   <img src="readmeResources/second_waypoint.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 12: From first waypoint to second waypoint</em>
+    <em>Fig. 14: From first waypoint to second waypoint</em>
 </p>
 
 <p align="center">
   <img src="readmeResources/third_waypoint.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 13: From second waypoint to third waypoint</em>
+    <em>Fig. 15: From second waypoint to third waypoint</em>
 </p>
 
 <p align="center">
   <img src="readmeResources/third_waypoint_to_initial_pose.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 14: From third waypoint to initial pose</em>
+    <em>Fig. 16: From third waypoint to initial pose</em>
 </p>
 
-Figures 11 to 14 show the process of following the waypoints. Since we are using the follow_waypoints package, we start from the initial pose, and finally return to the initial pose following three waypoints.
+Figures 13 to 16 show the process of following the waypoints. Since we are using the follow_waypoints package, we start from the initial pose, and finally return to the initial pose following three waypoints.
 
-## Materials
+## Material
 
 #### Video in Construct web platform
-[![Watch the video](readmeRessources/vide.png)](https://youtu.be/BmDgy7q8rPo)
+  [<img src="readmeResources/video.png" width="500" height="200">](https://youtu.be/BmDgy7q8rPo)
+
