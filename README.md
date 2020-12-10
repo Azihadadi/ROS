@@ -204,5 +204,6 @@ Figures 11 to 14 show the process of following the waypoints. Since we are using
 
 #### Video in Construct web platform
 <p align="center">
-  [<img src="readmeResources/video.png" width="500" height="200">](https://youtu.be/BmDgy7q8rPo)
-</p>
+  [<img src="readmeResources/video.png" width="500" height="200">]
+</p>(https://youtu.be/BmDgy7q8rPo)
+
