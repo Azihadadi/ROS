@@ -51,7 +51,7 @@ The target mode is Turtlebot Burger. Turtulebot3 which is available in two model
 ## Navigation
 The main aim of the ROS navigation package is to move a robot from the start position to the goal position, without making any collision with the environment. The ROS Navigation package comes with an implementation of several navigation related algorithms which can easily help implement autonomous navigation in the mobile robots. Navigation Stack which is shown in Figure 4, takes in current location of the robot, the goal pose, the Odometry data of Robot (wheel encoders etc) and data from a sensor as an input, and outputs the necessary velocity commands and forward them to the mobile base in order to move the robot to the designated goal.
 <p align="center">
-  <img src="readmeResources/img4.png" width="600" height="200">
+  <img src="readmeResources/Navigation_Stack.png" width="600" height="200">
 </p>
 <p align="center">
     <em>Fig. 4: Navigation Stack</em>
@@ -109,7 +109,7 @@ In RVIZ, a PoseArray element which is named WayPoints is added and shows all the
 ## Discussion
 ### Mapping
 <p align="center">
-  <img src="readmeResources/img5.png" width="500" height="200">
+  <img src="readmeResources/Mapping.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 5: Mapping process at a linear speed of 0.1m/s</em>
@@ -117,7 +117,7 @@ In RVIZ, a PoseArray element which is named WayPoints is added and shows all the
 It can be seen from Figure 5 that at the beginning we didn't know how to control the speed of the robot well to build a map. We used a linear velocity of 0.1m/s to control the movement. Part of the reason is that due to network delays, the maps created are not accurate. So we must constantly move through the scene to build a somewhat accurate and complete map.
 
 <p align="center">
-  <img src="readmeResources/img6.png" width="500" height="200">
+  <img src="readmeResources/PGM.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 6: PGM established and saved at a linear velocity of 0.05m/s</em>
@@ -128,7 +128,7 @@ Figure 6 is the map we created and saved by controlling the robot to move in the
 ## Localization
 
 <p align="center">
-  <img src="readmeResources/img7.png" width="500" height="200">
+  <img src="readmeResources/Initial_pose_estimation.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 7: Initial pose estimation during localization process</em>
@@ -137,7 +137,7 @@ Figure 6 is the map we created and saved by controlling the robot to move in the
 After launching the start_localization.launch file, we first need to give an initial pose, as Figure 7 shown, you can see the green particle cloud is the probability of pose. Then we let the robot move in the scene and use AMCL to automatically locate the robot.
 
 <p align="center">
-  <img src="readmeResources/img8.png" width="500" height="200">
+  <img src="readmeResources/Pose_estimation.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 8: Pose estimation after localization process</em>
@@ -148,7 +148,7 @@ It can be seen from Figure 8 that after automatic localization, the green partic
 ## Path Planning
 
 <p align="center">
-  <img src="readmeResources/img9.png" width="500" height="200">
+  <img src="readmeResources/Path_Planning.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 9: Path Planning</em>
@@ -159,7 +159,7 @@ By launching the start_navigation.launch file, publishing the goal point, the ro
 ## Avoid Obstacles
 
 <p align="center">
-  <img src="readmeResources/img10.png" width="100" height="100">
+  <img src="readmeResources/Avoid_Obstacles.png" width="100" height="100">
 </p>
 <p align="center">
     <em>Fig. 10: Avoid Obstacles</em>
@@ -170,28 +170,28 @@ Obstacles will be encountered during navigation. As shown in Figure 10, at the c
 ## Follow waypoints
 
 <p align="center">
-  <img src="readmeResources/img11.png" width="500" height="200">
+  <img src="readmeResources/first_waypoint.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 11: From initial pose to first waypoint</em>
 </p>
 
 <p align="center">
-  <img src="readmeResources/img12.png" width="500" height="200">
+  <img src="readmeResources/second_waypoint.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 12: From first waypoint to second waypoint</em>
 </p>
 
 <p align="center">
-  <img src="readmeResources/img13.png" width="500" height="200">
+  <img src="readmeResources/third_waypoint.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 13: From second waypoint to third waypoint</em>
 </p>
 
 <p align="center">
-  <img src="readmeResources/img14.png" width="500" height="200">
+  <img src="readmeResources/third_waypoint_to_initial_pose.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 14: From third waypoint to initial pose</em>
