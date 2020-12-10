@@ -7,9 +7,6 @@ Authors:
 - Jue Wang (834185446@qq.com)
 - Azadeh Hadadi (a.hadadi1363@gmail.com)
 
-[![Watch the video](ressources/vide.png)](https://youtu.be/BmDgy7q8rPo)
-
-
 **Table of Contents**
 - [Project Description](#Project-Description)
 - [Hardware Component](#hardware-Component)
@@ -201,3 +198,8 @@ Obstacles will be encountered during navigation. As shown in Figure 10, at the c
 </p>
 
 Figures 11 to 14 show the process of following the waypoints. Since we are using the follow_waypoints package, we start from the initial pose, and finally return to the initial pose following three waypoints.
+
+## Materials
+
+#### Video in Construct web platform
+[![Watch the video](readmeRessources/vide.png)](https://youtu.be/BmDgy7q8rPo)
