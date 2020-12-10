@@ -70,9 +70,12 @@ Turtlebot is controlled by teleoperation to make it move through the environment
 
 Then we choose **our_config.rviz** for Mapping. Figure 5 shows all the displays we need to add.
 
-
-
-fig5
+<p align="center">
+  <img src="readmeResources/Rviz_display.png" width="200" height="200">
+</p>
+<p align="center">
+    <em>Fig. 5: Rviz display</em>
+</p>
 
 We also tried using this command in the web shell to make the robot move around the environment:
 
