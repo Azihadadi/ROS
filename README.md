@@ -62,17 +62,20 @@ The main aim of the ROS navigation package is to move a robot from the start pos
 The source package is **ros_project** including **launch**, **params** and **maps** subdirectories. ros_project package is used as the main package which includes the required  launch files to do the steps. 
 The first step for navigation is creating a 2D map using the data from the laser and the pose of the robot when it moves around the environment. **start_mapping.launch** is created in the **launch** folder to start **slam_gmapping** node. To visualize the navigation process, the **Rvis** tool is applied. So, In a new web shell, we run the below command. 
 
-`rosrun rviz rviz -d rospack find turtlebot3_slam/rviz/turtlebot3_slam.rviz`
-
-Turtlebot is controlled by teleoperation to make it move through the environment in order to build the map using 360° LiDAR. To launch the teleoperation of Turtlebot3, we run the command in a new web shell:  
-
 `rosrun rviz rviz`
 
 Then we choose **our_config.rviz** for Mapping. Figure 5 shows all the displays we need to add.
 
+<p align="center">
+  <img src="readmeResources/Rviz_display.png" width="200" height="200">
+</p>
+<p align="center">
+    <em>Fig. 5: Rviz display</em>
+</p>
 
+Turtlebot is controlled by teleoperation to make it move through the environment in order to build the map using 360° LiDAR. To launch the teleoperation of Turtlebot3, we run the command in a new web shell: 
 
-fig5
+`roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
 
 We also tried using this command in the web shell to make the robot move around the environment:
 
@@ -113,6 +116,8 @@ To follow the waypoints, follow_waypoints package is useds. This package basical
 `cd ~/catkin_ws/src`
 
 `git clone https://github.com/danielsnider/follow_waypoints.git`
+
+Or you can directly download from our repository, we have already prepared this package.
 
 `roscd`
 
