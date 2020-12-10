@@ -180,7 +180,7 @@ Obstacles will be encountered during navigation. As shown in Figure 10, at the c
   <img src="readmeResources/img12.png" width="500" height="200">
 </p>
 <p align="center">
-    <em>Fig. 12: From initial pose to first waypoint</em>
+    <em>Fig. 12: From first waypoint to second waypoint</em>
 </p>
 
 <p align="center">
