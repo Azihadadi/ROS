@@ -7,7 +7,8 @@ Authors:
 - Jue Wang (834185446@qq.com)
 - Azadeh Hadadi (a.hadadi1363@gmail.com)
 
-https://youtu.be/BmDgy7q8rPo
+[![Watch the video](ressources/vide.png)](https://youtu.be/BmDgy7q8rPo)
+
 
 **Table of Contents**
 - [Project Description](#Project-Description)
