@@ -117,6 +117,8 @@ To follow the waypoints, follow_waypoints package is useds. This package basical
 
 `git clone https://github.com/danielsnider/follow_waypoints.git`
 
+Or you can directly download from our repository, we have already prepared this package.
+
 `roscd`
 
 `cd ..`
