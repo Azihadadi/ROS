@@ -4,8 +4,8 @@
 ROS Navigation stack is a powerful toolbox to path planning and Simultaneous Localization and Mapping (SLAM). This report is a technical document for ROS Navigation Using Turtlebot3 Burger. The **Construct Web Platform** is used as a simulator.
 
 Authors:
-- Jue Wang (834185446@qq.com)
-- Azadeh Hadadi (a.hadadi1363@gmail.com)
+- Jue Wang (Jue_Wang@etu.u-bourgogne.fr)
+- Azadeh Hadadi (Azadeh_Hadadi@etu.u-bourgogne.fr)
 
 **Table of Contents**
 - [Project Description](#Project-Description)
@@ -81,7 +81,7 @@ We also tried using this command in the web shell to make the robot move around 
 Figure 6 shows the information of velocity to be modified.
 
 <p align="center">
-  <img src="readmeResources/Mapping.png" width="500" height="200">
+  <img src="readmeResources/Control_the_velocities.png" width="300" height="100">
 </p>
 <p align="center">
     <em>Fig. 6: Control the velocities of the robot using **/cmd_vel** topic</em>
