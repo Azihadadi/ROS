@@ -73,6 +73,10 @@ Then we choose **our_config.rviz** for Mapping. Figure 5 shows all the displays 
     <em>Fig. 5: Rviz display</em>
 </p>
 
+Turtlebot is controlled by teleoperation to make it move through the environment in order to build the map using 360° LiDAR. To launch the teleoperation of Turtlebot3, we run the command in a new web shell: 
+
+`roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
+
 We also tried using this command in the web shell to make the robot move around the environment:
 
 `rostopic pub /cmd_vel [TAB][TAB]`
