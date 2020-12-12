@@ -93,7 +93,7 @@ Figure 6 shows the information of velocity to be modified.
 Then we modify the linear velocity in x and angular velocity in z to make it move, but every time we want to change the velocity, we should ctrl+c to kill the last command and run the command again to modify the corresponding velocity.
 
 The generated maps are saved in the **maps** folder using **map_server**: 
-* our_map.pmg
+* our_map.pgm
 * our_map.yaml
 
 **start_localization.launch** and **start_navigation.launch** are added in the **launch** folder to start the localization node and move the robot around to see its pose and start the **move_base** node to do path planning, respectively. We need to set all the parameters be called by move_base node in the **params** folder including:
