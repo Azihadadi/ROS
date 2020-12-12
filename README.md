@@ -220,7 +220,7 @@ Obstacles will be encountered during navigation. As shown in Figure 12, at the c
 </p>
 
 <p align="center">
-  <img src="readmeResources/third_waypoint_to_initial_pose.png" width="500" height="200">
+  <img src="readmeResources/third_waypoint_initial_pose.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 16: From third waypoint to initial pose</em>
