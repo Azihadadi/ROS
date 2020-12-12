@@ -146,7 +146,7 @@ In RVIZ, a PoseArray element which is named WayPoints is added and shows all the
 It can be seen from Figure 7 that at the beginning we didn't know how to control the speed of the robot well to build a map. We used a linear velocity of 0.1m/s to control the movement. Part of the reason is that due to network delays, the maps created are not accurate. So we must constantly move through the scene to build a somewhat accurate and complete map.
 
 <p align="center">
-  <img src="readmeResources/PGM.png" width="500" height="200">
+  <img src="readmeResources/PGM_image.png" width="500" height="200">
 </p>
 <p align="center">
     <em>Fig. 8: PGM established and saved at a linear velocity of 0.05m/s</em>
