@@ -44,7 +44,7 @@ A clean map of the full cafeteria should be created and the robot should localiz
 
 Final results for the project are recorded on video and can be accessed on YouTube via this link :
 
-## Hardware Component
+## Hardware Component [2]
 The target mode is Turtlebot Burger. Turtulebot3 which is available in two models, i.e. burger and waffle, is low-cost. It has a personal robot kit with open-source software and hardware. Moreover, this model which is the world’s most popular ROS platform, is modular, compact and customizable. 360° LiDAR of Burger, as the laser sensor is a 2D laser scanner that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping). Semiconductor Laser Diode (λ=785nm) is Its light source. The Distance range is 120 ~ 3,500mm. Additionally, its angular Range and angular Resolution are 360° and 1° respectively.
 <p align="center">
   <img src="readmeResources/Turtlebot_Burger_model.png" width="150" height="125">
