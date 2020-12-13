@@ -59,7 +59,7 @@ The main aim of the ROS navigation package is to move a robot from the start pos
   <img src="readmeResources/Navigation_Stack.png" width="600" height="200">
 </p>
 <p align="center">
-    <em>Fig. 4: Navigation Stack</em>
+    <em>Fig. 4: Navigation Stack [4]</em>
 </p>
 
 ## Procedure
@@ -245,3 +245,5 @@ to Practice. Publishing House of Electronics Industry, 2017.
 State University: ROS TUTORIAL 3, 2018
 
 [3] Robot ignite academy courses (https://www.theconstructsim.com/), 2020 
+
+[4] Deep SLAM: Navigation Stack (http://edge.rit.edu/edge/C18501/public/Navigation-Stack_28672002.html), 2020
