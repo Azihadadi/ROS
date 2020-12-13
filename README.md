@@ -5,6 +5,7 @@ ROS Navigation stack is a powerful toolbox to path planning and Simultaneous Loc
 
 Supervisor:   
 - Professor Ralph SEULIN
+
 Authors:
 - Jue Wang (Jue_Wang@etu.u-bourgogne.fr)
 - Azadeh Hadadi (Azadeh_Hadadi@etu.u-bourgogne.fr)
