@@ -233,6 +233,6 @@ Figures 13 to 16 show the process of following the waypoints. Since we are using
 
 ## Material
 
-#### Video in Construct web platform
+#### Video in Construct web platform (https://www.youtube.com/watch?v=BmDgy7q8rPo&feature=youtu.be)
   [<img src="readmeResources/video.png" width="500" height="200">](https://youtu.be/BmDgy7q8rPo)
 
