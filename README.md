@@ -3,8 +3,11 @@
 
 ROS Navigation stack is a powerful toolbox to path planning and Simultaneous Localization and Mapping (SLAM)[1]. This report is a technical document for ROS Navigation Using Turtlebot3 Burger. The **Construct Web Platform [3]** is used as a simulator.
 
-Supervisor:   
+Supervisors:   
 - Professor Ralph SEULIN
+- Professor Daniel BRAUN
+- Professor Raphael DUVERNE
+
 
 Authors:
 - Jue Wang (Jue_Wang@etu.u-bourgogne.fr)
