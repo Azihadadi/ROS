@@ -22,6 +22,7 @@ Authors:
   - [Avoid Obstacles](#avoid-Obstacles)
   - [Follow Waypoints](#Follow-Waypoints)
  - [Material Video](#material)
+ - [References](#references)
   
 ## Project Description
 
@@ -236,3 +237,9 @@ Figures 13 to 16 show the process of following the waypoints. Since we are using
 #### Video in Construct web platform (https://www.youtube.com/watch?v=BmDgy7q8rPo&feature=youtu.be)
   [<img src="readmeResources/video.png" width="500" height="200">](https://youtu.be/BmDgy7q8rPo)
 
+## References
+[1]Xiang Gao, Tao Zhang, Yi Liu, and Qinrui Yan. 14 Lectures on Visual SLAM: From Theory
+to Practice. Publishing House of Electronics Industry, 2017.
+
+[2]Guillermo Castillo (Wei Zhang), Department of Electrical and Computer Engineering , Ohio
+State University: ROS TUTORIAL 3, 2018
