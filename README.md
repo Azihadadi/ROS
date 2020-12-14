@@ -137,7 +137,7 @@ Or you can directly download from our repository, we have already prepared this 
  
 `roslaunch follow_waypoints follow_waypoints.launch`
 
-In RVIZ, a PoseArray element which is named WayPoints is added and shows all the waypoints are set since now. It subscribed to the topic **/waypoints**. The last step is publishing in the topic **/path_ready** to start sending waypoints to the movebase.
+In Rvis, a PoseArray element which is named WayPoints is added and shows all the waypoints are set since now. It subscribed to the topic **/waypoints**. The last step is publishing in the topic **/path_ready** to start sending waypoints to the movebase.
 
 `rostopic pub /path_ready std_msgs/Empty -1` 
 
