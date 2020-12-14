@@ -93,7 +93,7 @@ Figure 6 shows the information of velocity to be modified.
   <img src="readmeResources/Control_the_velocities.png" width="300" height="100">
 </p>
 <p align="center">
-    <em>Fig. 6: Control the velocities of the robot using **/cmd_vel** topic</em>
+    <em>Fig. 6: Control the velocities of the robot using /cmd_vel topic</em>
 </p>
 
 Then we modify the linear velocity in x and angular velocity in z to make it move, but every time we want to change the velocity, we should ctrl+c to kill the last command and run the command again to modify the corresponding velocity.
