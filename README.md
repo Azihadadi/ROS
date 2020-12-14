@@ -66,7 +66,7 @@ The main aim of the ROS navigation package is to move a robot from the start pos
 
 ## Procedure
 The source package is **ros_project** including **launch**, **params** and **maps** subdirectories. ros_project package is used as the main package which includes the required  launch files to do the steps. 
-The first step for navigation is creating a 2D map using the data from the laser and the pose of the robot when it moves around the environment. **start_mapping.launch** is created in the **launch** folder to start **slam_gmapping** node. To visualize the navigation process, the **Rvis** tool is applied. So, In a new web shell, we run the below command. 
+The first step for navigation is creating a 2D map using the data from the laser and the pose of the robot when it moves around the environment. **start_mapping.launch** is created in the **launch** folder to start **slam_gmapping** node. To visualize the navigation process, the **Rvis** tool is applied. So, in a new web shell, we run the below command. 
 
 `rosrun rviz rviz`
 
