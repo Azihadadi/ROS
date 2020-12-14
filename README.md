@@ -117,7 +117,7 @@ In the path planning step, **2D Pose Estimate** and **2D Nav Goal** tools in Rvi
 
 `roslaunch ros_project start_navigation.launch`
 
-To follow the waypoints, follow_waypoints package is useds. This package basically tracks the Estimate pose that is placed in RVIZ and stored. Then these positions should be published in a topic that starts sending them to the movebase system. So, follow_waypoints is gotten from the github and compiled:
+To follow the waypoints, **follow_waypoints** package is used. This package basically tracks the Estimate pose that is placed in RVIZ and stored. Then these positions should be published in a topic that starts sending them to the movebase system. So, follow_waypoints is gotten from the github and compiled:
 
 `cd ~/catkin_ws/src`
 
